@@ -1,0 +1,128 @@
+main {
+	.Menu {
+		margin-top: 50px;
+		margin-bottom: 50px;
+		max-width: 1220px;
+		width: 100%;
+
+		.menu {
+ 			display: flex;
+ 			flex-wrap: wrap;
+ 			justify-content: space-between;
+ 			
+
+ 			&-item {
+				width: 590px;
+				border-bottom: 1px dotted #eee;
+				position: relative;
+				padding: 10px 0 10px 0;
+ 			}
+
+			&-img {
+				width: 90px;
+				height: 63px;
+				box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+			}
+
+			&-title {
+				max-width: 244px;
+				height: 13px;
+				color: #14141d;
+				font-family: Sintony, serif;
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 17px;
+				text-transform: uppercase;
+				position: absolute;
+				top: 20px;
+				left: 120px;
+			}
+
+			&-desc {
+				max-width: 289px;
+				height: 15px;
+				color: #5c6369;
+				font-family: Sintony, serif;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 26px;
+				position: absolute;
+				top: 45px;
+				left: 120px;
+			}
+
+			&-price {
+				color: #fea100;
+			    font-family: 'Playfair Display', Serif;
+			    font-weight: 700;
+			    font-size: 26px;
+			    position: absolute;
+			    top: 20px;
+			    right: 10px;
+			}
+
+ 		}
+	}
+}
+
+
+
+@media screen and (max-width: 1440px) {
+	main {
+		.Menu {
+			.menu {
+
+				justify-content: space-around;
+
+				&-item {
+					width: 500px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	main {
+		.Menu {
+			.menu {
+				
+				&-item {
+					height: auto;
+					position: relative;
+				}
+
+				&-img {
+					position: absolute;
+				    left: 2vw;
+				    top: 50%;
+				    -webkit-transform: translate(0,-50%);
+				    -ms-transform: translate(0,-50%);
+				    transform: translate(0,-50%);
+				}
+
+				&-title {
+					position: static;
+				    margin-top: 10px;
+				    margin-left: 130px;
+				    font-size: 1.875rem;
+				}
+
+				&-desc {
+				    position: static;
+				    height: auto;
+				    margin-top: 10px;
+				    margin-left: 130px;
+				}
+
+				&-price {
+				    position: static;
+				    margin-top: 10px;
+				    margin-left: 130px;
+				    margin-bottom: 10px;
+				}
+
+				}
+			}
+		}
+	}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,   user-scalable=0" name="viewport">
+
+		
+					<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Sintony" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+
+
+					<!-- CSS FILES -->
+		
+		<link rel="stylesheet" href="/css/styles.css">
+
+
+		<link rel="manifest" href="manifest.webmanifest">
+
+
+
+
+		<title>Full</title>
+	
+
+	</head>
+
+	<body>
+
+		<noscript>Please turn on JavaScript</noscript>
+			
+		<!-- SCRIPT FOR SINGLE PAGE APPLICATION -->
+
+		<script src="/js/spa.js"></script>
+
+		<header class="header margin-center" id="header">
+			<script>ajaxPhp("header",'html','header');</script>
+			
+		</header>
+
+		<main class="main maxWidth margin-center" id="main">
+			<script>ajaxPhp('main','html','main');</script>
+		</main>
+
+		<footer class="footer maxWidth margin-center" id="footer">
+			<script>ajaxPhp("footer",'html','footer');</script>
+		</footer>
+
+
+
+	
+
+		<!-- MAIN JAVASCRIPT FILE -->
+
+		<script src="/js/script.js"></script> 
+	
+		<!-- SCRIPT FOR LAZYLOAD -->
+
+		<script src="/js/lazyload.js"></script>
+
+
+
+
+	</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US" class="mdl-js"><head>
+		
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,   user-scalable=0" name="viewport">
+
+		
+					<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Sintony" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:500&amp;display=swap" rel="stylesheet">
+
+
+					<!-- CSS FILES -->
+		
+		<link rel="stylesheet" href="../css/styles.css">
+
+
+		<link rel="manifest" href="../manifest.webmanifest">
+
+
+
+
+		<title>Book a Table</title>
+	
+
+	</head>
+
+	<body style="overflow: initial;">
+
+		<noscript>Please turn on JavaScript</noscript>
+			
+		<!-- SCRIPT FOR SINGLE PAGE APPLICATION -->
+
+		<!-- <script src="../js/spa.js"></script> -->
+
+		<header class="header margin-center" id="header"> <div class="header-logo">
+					<picture class="logo-bg">
+					<img src="../img/logo-min.png" id="logo-bg" data-src="../img/logo-min.png" alt="Logo">
+					</picture>
+				</div>	
+
+					<div class="header-mobile">
+				    		<input type="checkbox" id="mobile-checkbox">
+							<label for="mobile-checkbox">
+								<a class="burger-menu">
+									<span></span>
+								</a>
+							</label>
+
+
+							<div class="menu-container">
+								<div class="header-menu">
+									<a onclick="getMainPage();" class="home">home</a>
+									<a onclick="getMenuPage();" class="menu">menu</a>
+									<a onclick="getBlogPage();" class="blog">blog</a>
+									<a onclick="getAboutPage();" class="about">About us</a>
+									<a onclick="getContactPage();" class="contact">contact</a>
+
+							    </div>
+							    <button class="header-btn" onclick="getReservationPage();">
+							    	<div>
+										<img src="../img/icon-plate-min.png" alt="Plate">
+										<span>Book your table</span>
+							   		</div>
+							    </button>
+							</div>
+			    	</div></header>
+
+		<main class="main maxWidth margin-center" id="main"><section class="main-title maxWidth margin-center">
+				<picture class="reservation-bg maxWidth">
+					<img src="../img/About/page-title-min.jpg" class="maxWidth" id="reservation" data-src="../img/About/page-title-min.jpg" alt="Reservation">
+				</picture>
+				<div class="title">
+					<img src="../img/About/page-title-icon-left-min.png" id="page-title-left" data-src="../img/About/page-title-icon-left-min.png" alt="">
+					<h1 class="reservation-title">Reservation</h1>
+					<img src="../img/About/page-title-icon-right-min.png" id="page-title-right" data-src="../img/About/page-title-icon-right-min.png" alt="">
+				</div>
+			  </section>
+			  <section class="book">
+				<h1>Book a Table</h1>
+				<h2 class="margin-center">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </h2>
+				<form class="margin-center" action="">
+					<input title="Your Name" type="text" required="" placeholder="Name">
+					<input title="Your Email" type="email" required="" placeholder="Email">
+					<input title="Your Phone" type="tel" required="" placeholder="Phone">
+					<input title="Date" class="changable" type="text" required="" placeholder="Date">
+					<input title="Time" class="changable" type="text" required="" placeholder="Time">
+					<input title="Special Requirements" type="text" required="" placeholder="Guests">
+					<textarea name="msg" id="msg" cols="30" rows="10" required="" placeholder="Special Requirements"></textarea>
+					<button class="send margin-center" id="send"><div>Make reservation</div></button>
+				</form>
+			  </section>
+			  <section class="special-reservation maxWidth">
+			  	<picture class="special-bg maxWidth">
+					<img src="../img/About/grey-bg-min.png" id="special" data-src="../img/About/grey-bg-min.png" alt="Background">
+				</picture>
+
+				<h1>Special Reservations</h1>
+
+					<div class="wrapper">
+						<div class="advantages">
+							<picture class="advantages-img">
+								<img src="../img/Reservation/image-1.jpg" id="advantages-1" data-src="../img/Reservation/image-1.jpg" alt="Background">
+							</picture>
+							<h2>Group Dining</h2>
+							<h3>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</h3>
+						</div>
+						<div class="advantages">
+							<picture class="advantages-img">
+								<img src="../img/Reservation/image-2.jpg" id="advantages-2" data-src="../img/Reservation/image-2.jpg" alt="Background">
+							</picture>
+							<address>
+								<img src="../img/Reservation/call.svg" data-src="../img/Reservation/call.svg" class="call margin-center" alt="Call">
+								<h4 class="margin-center">1-007 000 005</h4>
+								<h5 class="margin-center">Call us for a Special reservation</h5>
+
+									<img src="../img/Reservation/call.svg" data-src="../img/Reservation/call.svg" class="call margin-center" alt="Call">
+								<h4 class="margin-center">info@luxury.com</h4>
+								<h5 class="margin-center">Mail us for a Special reservation</h5>
+							</address>
+						</div>
+						<div class="advantages">
+							<picture class="advantages-img">
+								<img src="../img/Reservation/image-3.jpg" id="advantages-3" data-src="../img/Reservation/image-3.jpg" alt="Background">
+							</picture>
+							<h2>Private Dining</h2>
+							<h3>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</h3>
+						</div>
+					</div>
+			  </section>
+			  <section class="openingHours">
+				<div class="title">Opening Hours</div>
+
+				<div class="weekdays">
+					<div class="days"><i>Monday to Friday</i></div>
+					<div class="hours">10am - 10pm</div>
+				</div>
+
+				<div class="weekends">
+					<div class="days"><i>Saturday to Sunday</i></div>
+					<div class="hours">9am - 11pm</div>
+				</div>
+
+				<picture class="pepers">
+					<img src="../img/Main/pepers-image.png" id="pepers-bg" data-src="../img/Main/pepers-image.png" alt="Pepers">
+				</picture>
+			  </section></main>
+
+		<footer class="footer maxWidth margin-center" id="footer"><div class="footer-nav">
+			<div class="title">Navigation</div>
+			<a onclick="getMainPage();" class="home">Home</a>
+			<a onclick="getAboutPage();" class="about">About us</a>
+			<a onclick="getMenuPage();" class="menu">Menu</a>
+			<a onclick="getReservationPage();" class="reservation">Reservation</a>
+			<a onclick="getBlogPage();" class="blog">Blog</a>
+			<a onclick="getContactPage();" class="contact">Contact us</a> 
+	   </div>
+	   <div class="footer-news">
+	   		<div class="title">News letter</div>
+	   		<div class="subtitle">Enter your email address and subscribe daily newsletter</div>
+	   		<div class="form">
+	   			<input type="text" placeholder="Email Address">
+				<button>SUBSCRIBE</button>
+	   		</div>
+	   </div>
+	   <div class="footer-social">
+	   		<button class="facebook"><img src="../img/facebook.svg" alt="Facebook"></button>
+	   		<button class="twitter"><img src="../img/twitter.svg" alt="Twitter"></button>
+	   		<button class="google-plus"><img src="../img/google-plus.svg" alt="Google+"></button>
+	   </div>
+	   <div class="footer-apps">
+	   		<div class="title">Our app available</div>
+	   		<button class="ios">
+	   			<div class="logo"></div>
+	   			<div class="txt-sm">Available on the</div>
+	   			<div class="txt-xs">App Store</div>
+	   		</button>
+	   		<button class="android">
+	   			<div class="logo"></div>
+	   			<div class="txt-sm">Get it on</div>
+	   			<div class="txt-xs">Google Play</div>
+	   		</button>
+	   </div>
+	   <div class="footer-copyright">
+	   		<span class="line-left"></span>
+	   		<span class="copyright">2019 ©  <span>Luxury Restaurant</span>, All rights reserved</span>
+	   		<span class="line-right"></span>
+	   </div></footer>
+
+
+
+	
+
+		<!-- MAIN JAVASCRIPT FILE -->
+
+		<script src="../js/script.js"></script> 
+	
+		<!-- SCRIPT FOR LAZYLOAD -->
+
+		<script src="../js/lazyload.js"></script>
+
+
+
+
+	
+</body></html>

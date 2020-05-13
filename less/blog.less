@@ -1,0 +1,372 @@
+article {
+	margin: 0 auto;
+	max-width: 845px;
+	padding-top: 6.0625rem;
+}
+
+article.blog {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.articles {
+
+	padding-bottom: 4rem;
+
+	.wrapper {
+		max-width: 845px;
+		position: relative;
+
+		.dummy {
+			position: relative;
+			height: 0;
+			padding-bottom: 47.33%;
+		}
+
+		img {
+			width: 100%;
+			max-height: 845px;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			pointer-events: none;
+			user-select: none;
+		}
+	}
+
+	.date-box {
+		width: 88px;
+		height: 64px;
+		background-color: #fea100;
+		margin-top: 1.875rem;
+		display: inline-block;
+	}
+
+	.date {
+		width: 80px;
+		height: 56px;
+		border: 1px dashed #fff;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+	.day {
+		font-size: 1.875rem;
+		font-family: Sintony;
+		font-weight: 700;
+		color: #fff;
+		position: absolute;
+		top: 0.3rem;
+		margin: 0 0.4rem;
+	}
+
+	.month, .year {
+		font-size: .75rem;
+		font-family: Sintony;
+		font-weight: 700;
+		color: #fff;
+		margin: 40px 0;
+		display: inline-block;
+	}
+
+	.month {
+		margin-left: 0.4rem;
+		
+		&::after {
+			content: '-';
+		}
+	}
+
+	.article-title {
+		color: #14141d;
+		font-family: "Playfair Display";
+		font-size: 2.1875rem;
+		font-weight: 700;
+		line-height: 22px;
+		display: inline-block;
+		margin-left: 2.5675rem;
+		text-align: center;
+	}
+
+	.article-text {
+		color: #5c6369;
+		font-family: Sintony;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 26px;
+		margin-left: calc(88px + 2.5675rem);
+
+		&::after {
+			content: '...';
+		}
+	}
+
+	.article-texts {
+		color: #5c6369;
+		font-family: Sintony;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 26px;
+		margin-top: -3.5rem;
+		margin-left: calc(88px + 2.5675rem);
+		white-space: pre-line;
+	}
+
+	.article-social {
+		position: absolute;
+		top: -5px;
+		left: 35rem;
+		* {
+			width: 58px;
+			height: 57px;
+			background: transparent;
+			border: none;
+			display: inline-flex;
+			position: relative;	
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.facebook {
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 46px;
+				height: 46px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				border-radius: 50%;
+				box-shadow: 0 0 0 #3b5998;
+				transition: box-shadow .6s ease-out;
+			}
+
+			&:hover::after {
+				box-shadow: 0 0 20px #3b5998;
+				
+			}
+		}
+
+		.twitter {
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 46px;
+				height: 46px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				border-radius: 50%;
+				box-shadow: 0 0 0 #55acee;
+				transition: box-shadow .6s ease-out;
+			}
+
+			&:hover::after {
+				box-shadow: 0 0 20px #55acee;
+				
+			}
+		}
+
+		.google-plus {
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 46px;
+				height: 46px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				border-radius: 50%;
+				box-shadow: 0 0 0 #dc4e41;
+				transition: box-shadow .6s ease-out;
+			}
+
+			&:hover::after {
+				box-shadow: 0 0 20px #dc4e41;
+				
+			}
+		}
+	}
+
+	hr {
+		height: 1px;
+		border: none;
+		background-color: #d4dade;
+		margin-left: calc(59px + 2.5675rem);
+	}
+
+	.btn_wrapper {
+		position: relative;
+	}
+
+	.readMore {
+		width: 129px;
+		height: 46px;
+		background-color: #fea100;
+		color: #ffffff;
+		font-family: Sintony;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 30px;
+		text-transform: uppercase;
+		letter-spacing: 0.35px;
+		border: none;
+		border-radius: 5px;
+		margin-left: calc(88px + 2.5675rem);
+		position: relative;
+	}
+
+	.prev {
+		width: 129px;
+		height: 46px;
+		background-color: #fea100;
+		color: #ffffff;
+		font-family: Sintony;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 30px;
+		text-transform: uppercase;
+		letter-spacing: 0.35px;
+		border: none;
+		border-radius: 5px;
+		margin-left: calc(88px + 2.5675rem);
+		position: relative;
+			&::before {
+				content: '< Prev';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				clip-path: circle(0% at 50% 100%);
+				border-radius: 10px;
+				background-image: linear-gradient(0deg,#FEB500,#fe9000);
+				will-change: clip-path, background-image;
+				
+			}
+
+			&:hover::before {
+				transition: clip-path 1s;
+				background-image: linear-gradient(0deg,#FEC000,#fe9000);
+				clip-path: circle(100%);
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				transition: all 1s;
+				transition-delay: .2s;	
+				z-index: -1;
+				border-radius: 10px;
+				box-shadow: 0px 0px 0px #fe7f00;
+			}
+
+			&:hover::after {
+				box-shadow: 0px 0px 10px #fe7f00;
+				
+				
+			}
+		}
+
+
+	.viewers {
+		font-size: 1rem;
+		font-family: "Sintony";
+		font-weight: 700;
+		color: #000;
+		display: block;
+		position: absolute;
+		top: 50%;
+		transform: translate(0,-50%);
+		left: 25rem;
+		margin: 0 auto;
+	}
+
+	.like-count {
+		font-size: 1.5rem;
+		font-family: Sintony;
+		font-weight: 700;
+		color: #000;
+		display: block;
+		position: absolute;
+		top: 50%;
+		transform: translate(0,-50%);
+		right: 3rem;
+		margin: 0 auto;
+	}
+
+	label {
+		position: absolute;
+		width: 1.5rem;
+		height: 1.5rem;
+		cursor: pointer;
+		user-select: none;
+		right: 5rem;
+		top: 50%;
+		transform: translate(0,-50%);
+
+		.like {
+			opacity: 0;
+			position: absolute;
+			width: 1.5rem;
+			height: 1.5rem;
+			margin: 0;
+			top: 0;
+
+			&:checked ~ .checkmark{
+				background: url('/img/liked.svg');
+			}
+		}
+
+		&:hover .like ~ .checkmark {
+			background: url('/img/liked.svg');
+			transition: background .4s linear;
+			
+
+			&::after {
+				background-color: red;
+				clip-path: polygon(51% 96%, 87% 63%, 91% 58%, 95% 53%, 98% 44%, 99% 37%, 100% 30%, 97% 22%, 94% 15%, 88% 9%, 78% 5%, 72% 4%, 66% 6%, 59% 8%, 53% 14%, 50% 20%, 45% 13%, 38% 8%, 31% 5%, 21% 6%, 24% 5%, 17% 7%, 13% 10%, 10% 11%, 7% 15%, 4% 19%, 2% 24%, 0% 28%, 0% 34%, 0% 39%, 2% 46%, 5% 53%, 10% 58%, 19% 69%);
+				
+			}
+
+		}
+
+		.checkmark {
+			display: block;
+			width: 1.5rem;
+			height: 1.5rem;
+			background-image: url('/img/like.svg');
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			&::after {
+				clip-path: polygon(0 0);
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				transition: clip-path .4s linear;
+			}
+		}
+
+
+	}
+}

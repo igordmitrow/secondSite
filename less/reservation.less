@@ -1,0 +1,381 @@
+h1.reservation-title {
+	max-width: 270px;
+}
+
+.book {
+	h1,h2 {
+		text-align: center;
+	}
+
+	h1 {
+		margin-top: 6rem;
+		color: #14141d;
+		font-family: "Playfair Display";
+		font-size: 2.1875rem;
+		font-weight: 700;
+		line-height: 22px;
+	}
+
+	h2 {
+		margin-top: 2.5rem;
+		max-width: 689px;
+		color: #5c6369;
+		font-family: Sintony;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 26px;
+	}
+
+	form {
+		max-width: 1169px;
+		width: 81%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		input {
+			border: none;
+			border-bottom: 1px solid #c7d1d6;
+			max-width: 370px;
+			width: 100%;
+		//	width: calc(100% - 14.5rem);
+			display: block;	
+			margin-top: 1rem;
+			padding: 1rem 0 1rem 3rem;
+			background: url(/img/avatar.svg) no-repeat;
+			background-size: 20px;
+			background-position-y: 50%;
+			background-position-x: 5px;
+			color: #363d43;
+			font-family: Sintony;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 26px;
+			box-sizing: border-box;
+		}
+
+		textarea {
+			border: none;
+			border-bottom: 1px solid #c7d1d6;
+			max-width: 1169px;
+			width: 100%;
+			display: block;
+			margin-top: 1rem;
+			padding: 1rem;
+			padding-left: 3rem;
+			height: calc(150px - 2rem);
+			resize: none;
+			background: url(/img/chat.svg) no-repeat;
+			background-size: 20px;
+			background-position-y: 17px;
+			color: #363d43;
+			font-family: Sintony;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 26px;
+			background-position-x: 5px;
+		}
+
+		*:nth-child(2) {
+			background: url(/img/letter.svg) no-repeat;
+			background-size: 20px;
+			background-position-y: 50%;
+			background-position-x: 5px;
+			margin: 1rem 1.8rem 0;
+		}
+
+		*:nth-child(3) {
+			background: url(/img/mobile-phone.svg) no-repeat;
+			background-size: 20px;
+			background-position-y: 50%;
+			background-position-x: 5px;
+		}
+
+		*:nth-child(4) {
+			background: url(/img/calendar.svg) no-repeat;
+			background-size: 20px;
+			background-position-y: 50%;
+			background-position-x: 5px;
+			height: 55px;
+		}
+
+		*:nth-child(5) {
+			background: url(/img/clock.svg) no-repeat;
+			background-size: 20px;
+			background-position-y: 50%;
+			background-position-x: 5px;
+			height: 55px;
+			margin: 1rem 1.8rem 0;
+		}
+
+		*:nth-child(6) {
+			background: url(/img/users.svg) no-repeat;
+			background-size: 20px;
+			background-position-y: 50%;
+			background-position-x: 5px;
+		}
+
+		.send {
+			margin-top: 4rem;
+			margin-bottom: 7em;
+		}
+	}
+}
+
+.special-reservation {
+	overflow: hidden;
+	position: relative;
+	
+	img {
+		user-select: none;
+	}
+
+	.special-bg {
+		img {
+			position: absolute;
+			height: 100%;
+			z-index: -1;
+		}
+	}
+
+	h1 {
+		margin-top: 6rem;
+		margin-bottom: 0;
+		color: #14141d;
+		font-family: "Playfair Display";
+		font-size: 35px;
+		font-weight: 700;
+		line-height: 22px;
+		text-align: center;
+	}
+
+	.wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 6rem;
+		width: 100%;
+
+		div {
+			margin-top: 4rem;
+			height: 420px;
+			max-width: 370px;
+			width: 90%;
+		}
+
+		div:nth-child(2) {
+			margin: 4rem 0 0 2rem;
+			position: relative;
+			overflow: hidden;
+
+			img {
+				max-width: 370px;
+				max-height: 420px;
+				object-position: center;
+			}
+		}
+
+		div:nth-child(odd) {
+			img {
+				max-height: 210px;
+				width: 100%;
+			}
+
+			background-color: #fff;
+		}
+
+		h2 {
+			color: #14141d;
+			font-family: "Playfair Display";
+			font-size: 26px;
+			font-weight: 700;
+			line-height: 22px;
+			margin: 3rem 0 0 3rem;
+		}
+
+		h3 {
+			color: #5c6369;
+			font-family: Sintony;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 26px;
+			max-width: 268px;
+			width: 100%;
+			margin: 1.5rem 0 0 3rem;
+		}
+
+		h4 {
+			color: #ffffff;
+			font-family: "Playfair Display";
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 21.97px;
+			text-transform: uppercase;
+			text-align: center;
+			margin-top: 1.2rem;
+		}
+
+		h5 {
+			color: #ffffff;
+			font-family: Sintony;
+			font-size: 13px;
+			font-weight: 700;
+			line-height: 16.97px;
+			text-transform: uppercase;
+			text-align: center;
+			margin-top: 1rem;
+		}
+
+		address {
+			max-width: 350px;
+			width: 90%;
+			height: 400px;
+			border: 1px dashed rgba(255,255,255,.5);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+		.call {
+			width: 31px;
+			height: 30px;
+			display: block;
+			margin-top: 4.9rem;
+		}
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.book {
+		form {
+			width: 75%;
+
+			*:nth-child(2) {
+				margin: 1rem 0rem 0 1.8rem;
+			}
+
+			*:nth-child(4) {
+				margin: 1rem 0rem 0 1.8rem;
+			}
+
+			*:nth-child(5) {
+				margin: 1rem 0 0;
+			}
+
+			*:nth-child(6) {
+				margin: 1rem 0rem 0 1.8rem;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1137px) {
+	.special-reservation {
+		.wrapper {
+			
+
+			div:nth-child(2) {
+				margin: 4rem 2rem 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.book {
+		form {
+			width: 100%;
+
+
+			textarea {
+				width: 80%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.book {
+		form {
+			width: 90%;
+
+			*:nth-child(2) {
+				margin: 1.5rem 0 0;
+			}
+
+			*:nth-child(4) {
+				margin: 1.5rem 0 0;
+			}
+
+			*:nth-child(5) {
+				margin: 1rem 0 0;
+			}
+
+			*:nth-child(6) {
+				margin: 1.5rem 0 0;
+			}
+
+			textarea {
+				width: 90%;
+			}
+		}
+	}
+
+	.special-reservation {
+		.wrapper {
+			justify-content: space-around;
+
+			div:nth-child(2) {
+				margin: 4rem 0rem 0;
+			}
+		}
+	}
+
+	
+}
+@media screen and (min-width: 769px) {
+	.book {
+		.send {
+			&::before {
+					content: 'Make reservation';
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					clip-path: circle(0% at 50% 100%);
+					border-radius: 5px;
+					background-image: linear-gradient(0deg,#FEB500,#fe9000);
+					will-change: clip-path, background-image;
+					letter-spacing: 0.35px;
+				}
+
+				&:hover::before {
+					transition: clip-path 1s;
+					background-image: linear-gradient(0deg,#FEC000,#fe9000);
+					clip-path: circle(100%);
+				}
+
+				&::after {
+					content: '';
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					transition: all 1s;
+					transition-delay: .2s;	
+					border-radius: 5px;
+					box-shadow: 0px 0px 0px #fe7f00;
+				}
+
+				&:hover::after {
+					box-shadow: 0px 0px 15px #fe7f00;
+				}
+		}
+	}
+}

@@ -1,0 +1,794 @@
+
+
+.main {
+	padding-top: 83px;
+
+	.slider {
+
+		position: relative;
+		user-select: none;
+		outline: 1px; 
+		overflow: hidden;
+	
+
+		&-bg {
+			
+			position: relative;
+			top: 4px;
+
+			img {
+				max-height: 570px;
+				min-height: 543.8px;
+			}
+		}
+
+		.dish {
+			
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			
+
+			.side {
+				display: none;
+				 
+	
+
+				&-active {
+					display: initial;
+				}
+			}
+
+			img {
+				opacity: 0;
+				position: absolute;
+				right: 150px;
+				bottom: 0;
+				height: 95%;
+				user-select: none;
+				will-change: transform, opacity;
+			}
+
+			.img-active {
+				transition: opacity 1.6s , transform 1.6s;
+				transition-timing-function: ease-in-out;
+				transition-delay: 2.4s;
+				opacity: 1;
+				transform: translate(-30%,);
+			}
+
+			.teast {
+				max-width: 489px;
+				height: 55px;
+				color: #ffffff;
+				font-family: 'Playfair Display', serif;
+				font-size: 3.5rem;
+				font-weight: 700;
+				line-height: 30px;
+				position: relative;
+				top: 152px;
+				left: 401px;
+				letter-spacing: 0.2px;
+				opacity: 0;
+				will-change: transform, opacity;
+
+			}
+
+			
+
+			.teast-active {
+				transition: opacity 2s , transform 2s;
+				transition-timing-function: ease;
+				transition-delay: 2s;
+				opacity: 1;
+				transform: translate(0, 150%);
+			}
+
+			.from {
+				opacity: 0;
+				max-width: 523px;
+				height: 38px;
+				position: relative;
+				top: 173px;
+				left: 402px;
+				letter-spacing: 0.7px;
+				font-family: 'Playfair Display', serif;
+				font-size: 2.5rem;
+				font-weight: 700;
+				line-height: 30px;
+				color: #ffffff;
+				will-change: transform, opacity;
+
+				.sub {
+					color: #fea100;
+				}
+			}
+
+			.from-active {
+				transition: opacity 2.2s , transform 2.2s;
+				transition-delay: 1.8s;
+				transition-timing-function: ease;
+				opacity: 1;
+				transform: translate(0, 150%);
+			}
+
+			.expMenu {
+				opacity: 0;
+				max-width: 168px;
+				width: 100%;
+				height: 47px;
+				border: none;
+				background-color: #fea100;
+				border-radius: 50px;
+				color: #fff;
+				cursor: pointer;
+				padding: 0;
+				position: relative;
+				top: 300px;
+				left: 400px;
+				will-change: transform, opacity;
+
+				&-active {
+					transition: opacity 1.8s 2.2s, transform 1.8s 2.2s, background .4s , color .4s;	
+					transition-timing-function: ease;
+					opacity: 1;
+					transform: translate(0, -100%);
+				}
+
+				div {
+					font-family: Roboto, sans-serif;
+					font-size: 16px;
+					font-weight: 500;
+
+				}
+
+			}
+
+		
+			.left-arrow {
+				height: 40px;
+				width: 40px;
+				transition: opacity .5s;
+				position: absolute;
+				top: 50%;
+				transform: translate(0,-50%);
+				left: 2%;
+				cursor: pointer;
+			}
+			.right-arrow {
+				height: 40px;
+				width: 40px;
+				transition: opacity .5s;
+				position: absolute;
+				top: 50%;
+				right: 2%;
+				transform: translate(0,-50%) rotate(180deg);
+				cursor: pointer;
+			}
+
+			.slide-circle {
+				position: absolute;
+				left: 50%;
+				bottom: 20px;
+				transform: translate(-50%);
+				width: 48px;
+
+					.circle {
+					width: 16px;
+					height: 16px;
+					opacity: 0.3;
+					background-color: #fff;
+					border-radius: 50%;
+					cursor: pointer;
+					position: relative;
+					left: 5%;
+					transition: .4s;
+					transition-timing-function: ease;
+				}
+
+				.circle-active {
+					width: 16px;
+					height: 16px;
+					box-sizing: border-box;
+					border-radius: 50%;
+					border: 2px #fff solid;
+					background-color: transparent;
+					opacity: 1;
+					position: relative;
+					left: 5%;
+
+					&::after {
+						content: '';
+						background-color: #fff;
+						width: 5px;
+						height: 5px;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						border: none;
+						transform: translate(-50%,-50%);
+						border-radius: 50%;
+					}
+
+				}
+
+				.circle[data-number='2'] {
+					top: -16px;
+					left: 32px;
+				}
+			}
+		}
+	}
+ 
+
+ 	section.callUs {
+ 		height: 115px;
+ 		background-color: #edf1f3;
+ 		border-bottom-width: 1px;
+ 		border-bottom-color: #dde3e7;
+ 		border-bottom-style: solid;
+ 		position: relative;
+
+ 		.reviews {
+ 			display: block;
+ 			width: 250px;
+ 			position: absolute;
+ 			top: 50%;
+			transform: translate(0,-50%);
+			left: 400px;
+
+
+			#reviews {
+				width: 250px;
+				height: 45px;
+				user-select: none;
+				position: relative;
+				
+			}
+
+ 		}
+
+		.callUs {
+			width: 444px;
+			display: block;
+ 			position: absolute;
+ 			top: 50%;
+			transform: translate(0,-50%);
+			left: 650px;
+				
+
+	 		#call-us {
+	 			width: 444px;
+	 			height: 45px;
+	 			user-select: none;
+	 			position: relative;
+				
+	 		}
+		}
+
+ 	}
+
+ 	.aboutUs {
+		position: relative;
+ 		height: 490px;
+		
+		&-title {
+			max-width: 289px;
+			height: 29px;
+			color: #14141d;
+			font-family: 'Playfair Display', serif;
+			font-size: 2.1875rem;
+			font-weight: 700;
+			line-height: 22px;
+			position: relative;
+			top: 126px;
+			left: 400px;
+		}
+
+		&-subtitle {
+			max-width: 543px;
+			height: 119px;
+			color: #5c6369;
+			font-family: 'Sintony', serif;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 26px;
+			position: relative;
+			top: 155px;
+			left: 400px;
+		}
+
+		&-img {
+			max-width: 550px;
+			width: 100%;
+			max-height: 360px;
+			min-height: 100px;
+			position: absolute;
+			left: 1150px;
+			top: 50%;
+			transform: translate(0,-50%);
+
+			#aboutUs-img {
+				max-height: 360px;
+				min-height: 100px;
+				max-width: 550px;
+				width: 100%;
+				user-select: none;
+			}
+		}
+
+		.readMore {
+			width: 145px;
+			height: 48px;
+			border-radius: 30px;
+			border: none;
+			background-color: #fea100;
+			color: #ffffff;
+			font-family:  Roboto,sans-serif;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 30px;
+			text-transform: uppercase;
+			letter-spacing: 0.35px;
+			position: relative;
+			left: 400px;
+			top: 200px;
+
+			
+			
+		}
+ 	}
+
+ 	.specialFoods {
+
+ 		position: relative;
+ 		height: 800px;
+
+ 		#pizza-bg {
+ 			height: 420px;
+ 			object-fit: cover;
+ 		}
+
+ 		.dishes-of-the-day {
+
+ 			position: absolute;
+ 			top: 166px;
+ 			left: 50%;
+ 			transform: translate(-50%,0);
+ 			max-width: 1200px;
+ 			width: 100%;
+ 			display: grid;
+ 			grid-template-columns: repeat(2,1fr);
+ 			grid-template-rows: minmax(1fr,526px);
+ 			grid-column-gap: 40px;
+ 			font-family: 'Sintony', serif;
+
+
+
+ 			.title {
+ 				max-width: 247px;
+				height: 35px;
+				color: #ffffff;
+				font-family: "Playfair Display";
+				font-size: 2.1875rem;
+				font-weight: 700;
+				line-height: 22px;
+				position: absolute;
+				top: -68px;
+				left: 50%;
+				transform: translate(-50%,);
+ 			}
+
+ 			hr {
+ 				max-width: 528px;
+ 				height: 1px;
+ 				background-color: #eee;
+ 				border: none;
+
+ 			}
+
+ 			.first-dishes {
+					
+				max-width: 580px;
+				width: 100%;
+				box-shadow: 0 24px 38px rgba(0, 0, 0, 0.09);
+				background-color: #fff;
+				
+				.picture-first {
+					padding-bottom: 61.724%;
+					position: relative;
+					height: 0;
+					display: block;
+				}
+
+ 				#first-dishes-img {
+ 					width: 100%;
+ 					height: 100%;
+ 					position: absolute;
+ 					top: 0;
+ 					left: 0;
+ 				}
+
+ 				.first-dishes-name {
+ 					max-width: 400px;
+					height: 22px;
+					color: #14141d;
+					font-size: 18px;
+					line-height: 22px;
+					margin-left: 25px;
+ 				}
+
+				.first-dishes-desc {
+ 					color: #5c6369;
+				    font-family: 'Sintony';
+				    font-size: 14px;
+				    line-height: 2;
+				    margin-left: 25px;
+				    margin-top: -10px;
+ 				}
+
+ 				.first-dishes-price {
+ 					width: 92px;
+					height: 26px;
+					color: #fea100;
+					font-family: "Playfair Display";
+					font-size: 1.875rem;
+					font-weight: 700;
+					line-height: 22px;
+					text-transform: uppercase;
+					margin: 25px 0px 25px 25px;
+ 				}
+ 			}
+
+ 			.second-dishes {
+
+ 				max-width: 580px;
+ 				width: 100%;
+				box-shadow: 0 24px 38px rgba(0, 0, 0, 0.09);
+				background-color: #fff;
+				
+				.picture-second {
+					padding-bottom: 61.724%;
+					position: relative;
+					height: 0;
+					display: block;
+				}
+
+ 				#second-dishes-img {
+ 					width: 100%;
+ 					height: 100%;
+ 					position: absolute;
+ 					top: 0;
+ 					left: 0;
+
+ 				}
+
+ 				.second-dishes-name {
+ 					max-width: 400px;
+					height: 22px;
+					color: #14141d;
+					font-size: 18px;
+					font-weight: 700;
+					line-height: 22px;
+					margin-left: 25px;
+ 				}
+
+ 				.second-dishes-desc {
+ 					color: #5c6369;
+				    font-family: 'Sintony';
+				    font-size: 14px;
+				    line-height: 2;
+				    margin-left: 25px;
+				    margin-top: -10px;
+ 				}
+
+ 				.second-dishes-price {
+ 					width: 92px;
+					height: 26px;
+					color: #fea100;
+					font-family: "Playfair Display";
+					font-size: 1.875rem;
+					font-weight: 700;
+					line-height: 22px;
+					text-transform: uppercase;
+					margin: 25px 0px 25px 25px;
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	.foodMenu {
+ 		max-width: 1220px;
+ 		width: 100%;
+
+ 		.title {
+ 			max-width: 189px;
+			height: 29px;
+			color: #14141d;
+			font-family: "Playfair Display";
+			font-size: 2.1875rem;
+			font-weight: 700;
+			line-height: 22px;
+			margin-bottom: 25px;
+ 		}
+
+ 		hr {
+ 			border: none;
+ 			border-top: 1px dotted rgba(163,176,186,0.51);
+ 			margin-bottom: 15px;
+ 		} 
+
+ 		.menu {
+ 			display: flex;
+ 			flex-wrap: wrap;
+ 			justify-content: space-between;
+ 			
+
+ 			&-item {
+				width: 590px;
+				border-bottom: 1px dotted #eee;
+				position: relative;
+				padding: 10px 0 10px 0;
+ 			}
+
+			&-img {
+				width: 90px;
+				height: 63px;
+				box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+			}
+
+			&-title {
+				max-width: 244px;
+				height: 13px;
+				color: #14141d;
+				font-family: Sintony, serif;
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 17px;
+				text-transform: uppercase;
+				position: absolute;
+				top: 20px;
+				left: 120px;
+			}
+
+			&-desc {
+				max-width: 289px;
+				height: 15px;
+				color: #5c6369;
+				font-family: Sintony, serif;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 26px;
+				position: absolute;
+				top: 45px;
+				left: 120px;
+			}
+
+			&-price {
+				color: #fea100;
+			    font-family: 'Playfair Display', Serif;
+			    font-weight: 700;
+			    font-size: 26px;
+			    position: absolute;
+			    top: 20px;
+			    right: 10px;
+			}
+
+ 		}
+
+ 		.expMenu {
+ 			display: block;
+ 			margin-top: 50px;
+ 			margin-bottom: 70px;
+ 			border: none;
+ 			background-color: #fea100;
+ 			border-radius: 30px;
+ 			max-width: 199px;
+ 			width: 100%;
+			height: 51px;
+			color: #ffffff;
+			font-family:  Roboto,sans-serif;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 30px;
+			text-transform: uppercase;
+			letter-spacing: 0.35px;
+			position: relative;
+ 		}
+ 	}
+
+ 	.review {
+ 		height: 465px;
+		position: relative;
+		user-select: text;
+		overflow: hidden;
+
+		.slider {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 3;
+			overflow: initial;
+		}
+
+		img {
+			user-select: none;
+		}
+
+
+		.title {
+			max-width: 234px;
+			height: 35px;
+			color: #ffffff;
+			font-family: "Playfair Display";
+			font-size: 2.1875rem;
+			font-weight: 700;
+			line-height: 22px;
+			position: absolute;
+			top: 100px;
+			left: 50%;
+			transform: translate(-50%,0%);
+		
+		}
+
+		.left-arrow {
+			opacity: 0;
+			height: 40px;
+			width: 40px;
+			transition: opacity .4s;
+			position: absolute;
+			top: 50%;
+			transform: translate(0,-50%);
+			left: 2%;
+			cursor: pointer;
+			z-index: 4;
+		}
+		.right-arrow {
+			opacity: 0;
+			height: 40px;
+			width: 40px;
+			transition: opacity .4s;
+			position: absolute;
+			top: 50%;
+			right: 2%;
+			transform: translate(0,-50%) rotate(180deg);
+			z-index: 4;
+			cursor: pointer;
+		}
+
+		&:hover .left-arrow , &:hover .right-arrow{
+			opacity: 1;
+		}
+
+		&-item {
+			opacity: 0;	
+			transform: translate(-100%,0);
+		}
+
+		&-active {
+			transform: translate(0);
+			opacity: 1;	
+		}
+
+
+
+		&-quote {
+			position: absolute;
+			top: 200px;
+			max-width: 741px;
+			width: 100%;
+			height: 68px;
+			color: #ffffff;
+			font-family: Sintony;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 26px;
+			left: 50%;
+			transform: translate(-50%,0);
+			text-align: center;
+			user-select: text;
+
+			&::before, &::after {
+				content: '"';
+			}
+		}
+
+		&-img {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%,0);
+			top: 300px;
+			box-shadow: 0 0 25px #000;
+			border-radius: 50%;
+		}
+
+		&-name {
+			max-width: 179px;
+			height: 13px;
+			color: #fffaf1;
+			font-family: Sintony;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 17px;
+			text-transform: uppercase;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%,0);
+			top: 380px;
+			user-select: text;
+		}
+
+		&-rate {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%,0);
+			top: 410px;
+			color: #fff221;
+			font-size: 20px;
+			font-weight: 400;
+			letter-spacing: 5px;
+			text-align: center;
+		}
+	
+ 	}
+
+ 	.openingHours {
+		position: relative;
+		height: 217px;
+
+ 		.title {
+ 			max-width: 293px;
+			height: 35px;
+			color: #14141d;
+			font-family: "Playfair Display";
+			font-size: 2.1875rem;
+			font-weight: 700;
+			line-height: 22px;
+			position: absolute;
+			top: 50%;
+			left: 100px;
+			transform: translate(0,-50%);
+ 		}
+
+ 		.weekdays {
+ 			position: absolute;
+ 			top: 50%;
+			left: 400px;
+			transform: translate(0,-50%);
+ 		}
+
+ 		.weekends {
+ 			position: absolute;
+ 			top: 50%;
+			left: 700px;
+			transform: translate(0,-50%);
+ 		}
+
+ 		.days {
+ 			line-height: 1.4;
+ 			font-family: 'Playfair Display', Serif;
+ 			font-size: 20px;
+ 			color: rgba(55,56,68,0.61);
+ 			text-align: left;
+ 			font-weight: 400;
+ 		}
+
+ 		.hours {
+ 			font-size: 28px;
+ 			color: #fea100;
+ 			text-align: left;
+ 			margin: 0px 0px 15px 0px;
+			line-height: 1.4;
+			font-family: 'Playfair Display', Serif;
+			font-weight: bold;
+ 		}
+
+ 		.pepers {
+ 			position: absolute;
+ 			bottom: -40px;
+ 			right: 90px;
+ 		}
+ 	}
+}

@@ -1,0 +1,121 @@
+
+@import url(about.less);
+@import url(main.less);
+@import url(footer.less);
+@import url(header.less);
+@import url(media.less);
+@import url(menu.less);
+@import url(contact.less);
+@import url(reservation.less);
+@import url(blog.less);
+
+html, body {
+	font-size: 16px;
+	margin: 0;
+}
+
+ /* 
+ 	Disable link decoration
+ */
+
+body {
+	button, a {
+		cursor: pointer;
+		text-decoration: none;
+		user-select: text;
+	}
+
+	*:focus {
+		outline: #fea100 solid 1px; 
+	}
+}
+
+.main, .footer {
+	box-shadow: 0 30px 50px rgba(111,111,111,.7);
+}
+
+/*
+	Useful class style 
+*/
+
+.maxWidth {
+	max-width: 1970px;
+	width: 100%;
+}
+
+.margin-center {
+	margin: 0 auto;
+}
+
+.translate-center {
+	left: 50%;
+	transform: translate(-50%);
+}
+
+
+
+/*
+
+			Special selector
+
+*/
+
+::selection {
+  	background: #fea100; 
+  	color: #fff;
+}
+::-moz-selection {
+ 	background: #fea100;
+	color: #fff;
+}
+
+
+
+
+@keyframes review-right {
+	0% {
+		transform: translate(0);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translate(100%);
+		opacity: 0;
+	}
+}
+
+@keyframes review-left {
+	0% {
+		transform: translate(0);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translate(-100%);
+		opacity: 0;
+	}
+}
+
+@keyframes review-active-right {
+	0% {
+		transform: translate(-100%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0);
+		opacity: 1;
+	}
+}
+
+@keyframes review-active-left {
+	0% {
+		transform: translate(100%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0%);
+		opacity: 1;
+	}
+}
